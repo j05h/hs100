@@ -9,7 +9,16 @@ import struct
 import json
 from optparse import OptionParser
 
-parser = OptionParser(usage="%prog <on|off|query|meter> [options]")
+usage = """This is a simple tool to manipulate TP-Link HS100 devices
+
+%prog <on|off|query|meter> [options]
+
+on:    turns on the device
+off:   turns off the device
+query: queries the device for general information
+meter: queries the device for power usage information"""
+
+parser = OptionParser(usage=usage)
 parser.add_option("--ip", dest="ip",
                   help="IP address to query", metavar="IPADDR")
 
