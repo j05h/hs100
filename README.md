@@ -11,9 +11,16 @@ the devicees periodically and graph the results onto a simple webpage.
 
 # Usage
 
-Usage: hs100.py <on|off|query|meter> [options]
+```
+Usage: hs100.py {on|off|query|meter} [options]
+
+<b>on</b> turns on the device
+<b>off</b> turns off the device
+<b>query</b> queries the device for general information
+<b>meter</b> queries the device for power usage information 
 
 Options:
   -h, --help   show this help message and exit
   --ip=IPADDR  IP address to query
   --port=PORT  PORT to query on the IP (default 9999)
+```
