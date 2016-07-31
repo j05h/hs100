@@ -19,7 +19,7 @@ discover: discover HS100 devices on the network"""
 
 parser = OptionParser(usage=usage)
 parser.add_option("--ip", dest="ip",
-                  help="IP address to query", metavar="IPADDR")
+                  help="IP address to query. 'all' will auto discover devices.  ", metavar="IPADDR")
 
 parser.add_option("--port", dest="port", default=9999, type="int",
                   help="PORT to query on the IP (default %default)", metavar="PORT")
